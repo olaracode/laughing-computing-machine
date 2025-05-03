@@ -6,7 +6,7 @@ import ItemModal from '../App/ItemModal/ItemModal.jsx'
 import Footer from '../App/Footer/Footer.jsx'
 import {useEffect, useState} from 'react'
 import { coordinates, APIkey } from '../../utils/constants.js'
-import { getWeatherData } from '../../utils/WeatherApi.jsS'
+import { getWeatherData } from '../../utils/WeatherApi.js'
 
 function App() {
   const [weatherData, setWeatherData] = useState({ type: "cold" });
