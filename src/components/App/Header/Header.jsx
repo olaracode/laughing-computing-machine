@@ -7,7 +7,7 @@ function Header({ onAddClick, weatherData }) {
     const date = new Date();
     return date.toLocaleDateString("en-US", {
       month: "long",
-      day: "numeric"
+      day: "numeric",
     });
   };
 
