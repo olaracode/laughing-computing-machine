@@ -12,7 +12,7 @@ function App() {
   const [weatherData, setWeatherData] = useState({
     type: "",
     temp: { F: 999 },
-    city: ""
+    city: "",
   });
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
@@ -49,10 +49,10 @@ function App() {
         <Footer />
       </div>
       <ModalWithForm
-        title="New garment"
-        buttonText="Add garment"
-        activeModal={activeModal}
-        closeActiveModal={closeActiveModal}
+        title="Add Garment"
+        buttonText="Add"
+        isOpen={activeModal === "add-garment"}
+        closeActiveModal={handleCloseModal}
       >
         <label htmlFor="name" className="modal__label">
           Name{" "}
