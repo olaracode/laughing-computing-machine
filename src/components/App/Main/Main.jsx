@@ -4,6 +4,7 @@ import { defaultClothingItems } from "../../../utils/constants.js";
 import "./Main.css";
 
 function Main({ weatherData, onCardClick }) {
+  console.log (weatherData);
   const roundedTemp = Math.round(weatherData.temperature);
   
   return (

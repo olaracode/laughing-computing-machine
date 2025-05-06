@@ -11,7 +11,7 @@ import { getWeatherData, parseWeatherData } from "../../utils/WeatherApi.js";
 function App() {
   const [weatherData, setWeatherData] = useState({
     type: "",
-    temp: { F: 999 },
+    temp: { F: 0 },
     city: "",
   });
   const [activeModal, setActiveModal] = useState("");
@@ -52,7 +52,7 @@ function App() {
         title="Add Garment"
         buttonText="Add"
         isOpen={activeModal === "add-garment"}
-        closeActiveModal={handleCloseModal}
+        closeActiveModal={closeActiveModal}
       >
         <label htmlFor="name" className="modal__label">
           Name{" "}
